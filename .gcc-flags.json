@@ -1,0 +1,8 @@
+{
+  "execPath": "/usr/bin/gcc",
+  "gccDefaultCFlags": "-Wall -fsyntax-only -DSTM32F401xE -DNUCLEO_F401",
+  "gccDefaultCppFlags": "-Wall -std=c++11",
+  "gccErrorLimit": 15,
+  "gccIncludePaths": "",
+  "gccSuppressWarnings": true
+}
