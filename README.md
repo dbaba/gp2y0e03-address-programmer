@@ -90,6 +90,14 @@ See the schematic above.
 
 Now ready for performing E-Fuse programmer. Push the blue button to continue.
 
+# How to check if the address is updated
+
+Open your terminal app and connect the board.
+
+Keep 'Reset' button down. Push Button1 then release 'Reset' button. Finally, release Button1.
+
+And you will see the distance in cm on your terminal console.
+
 # Output Example
 
 You can see the following output by connecting with a terminal app with baud rate 115200.
