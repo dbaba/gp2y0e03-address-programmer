@@ -1,6 +1,9 @@
 gp2y0e03-address-programmer
 ===
 
+[![GitHub release](https://img.shields.io/github/release/dbaba/gp2y0e03-address-programmer.svg)](https://github.com/dbaba/gp2y0e03-address-programmer/releases/latest)
+[![License MIT](https://img.shields.io/github/license/dbaba/gp2y0e03-address-programmer.svg)](http://opensource.org/licenses/MIT)
+
 A tool for modifying [GP2Y0E03](http://www.sharp-world.com/products/device/lineup/data/pdf/datasheet/gp2y0e03_e.pdf) I2C address with E-Fuse running on mbed device.
 
 # Schematic
@@ -129,5 +132,7 @@ You can see the following output by connecting with a terminal app with baud rat
 The 'stage 10' functions like `e_fuse_stage10_1_1()` are never tested as I haven't failed to modify addresses yet.
 
 # Revision History
+* 1.1.0
+  - Add a new mode allowing to test if a sensor works properly with the updated address
 * 1.0.0
   - Initial Release
