@@ -5,6 +5,14 @@ I2C i2c(PB_9, PB_8);
 
 DigitalOut vpp(VPP_PIN);
 
+uint16_t gp2y0e03_read_distance(uint8_t address) {
+    uint8_t register_address = 0x5E;
+    uint8_t data[2];
+    i2c.write(address, (char *) &register_address, 1);
+    i2c.read(address, (char *) data, 2);
+    return (((uint16_t) data[0] << 4) + (data[1] & 0x0f)) / 16 / 4;
+}
+
 /*
  * I2C Data writing
  */

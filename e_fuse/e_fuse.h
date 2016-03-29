@@ -6,3 +6,5 @@
 #define VPP_PIN D7
 
 void e_fuse_run(Serial* pc, uint8_t new_address);
+
+uint16_t gp2y0e03_read_distance(uint8_t address);
