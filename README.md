@@ -1,6 +1,9 @@
 gp2y0e03-address-programmer
 ===
 
+[![GitHub release](https://img.shields.io/github/release/dbaba/gp2y0e03-address-programmer.svg)](https://github.com/dbaba/gp2y0e03-address-programmer/releases/latest)
+[![License MIT](https://img.shields.io/github/license/dbaba/gp2y0e03-address-programmer.svg)](http://opensource.org/licenses/MIT)
+
 A tool for modifying [GP2Y0E03](http://www.sharp-world.com/products/device/lineup/data/pdf/datasheet/gp2y0e03_e.pdf) I2C address with E-Fuse running on mbed device.
 
 # Schematic
