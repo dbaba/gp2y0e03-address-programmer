@@ -31,7 +31,7 @@ static void run_sensor_app(uint8_t new_address) {
 }
 
 static void run_programmer(uint8_t new_address_data, uint8_t new_address) {
-    pc.printf("** Welcome to Address Programmer!\r\n** I'll update the GP2Y0E03 I2C address from [0x80](Write) to [0x%02X](Write)\r\n", new_address);
+    pc.printf("** Welcome to Address Programmer!\r\n** I'll update the GP2Y0E03 I2C address from [0x80(7-bit:0x40)](Write) to [0x%02X(7-bit:0x%02X)](Write)\r\n", new_address, new_address >> 1);
     pc.printf("** You cannot revert the change once the address is updated\r\n** Push Button1 to continue!\r\n");
     wait_for_button1();
     pc.printf("+++++++++++++++++++++++++++++++++++\r\n");
