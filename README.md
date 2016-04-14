@@ -71,9 +71,11 @@ Note that `NEW_ADDRESS_DATA` is NOT a slave address. Choose the `Data` column va
 | 0xC0     | 0x60          | **0x0C** |
 | 0xD0     | 0x68          | **0x0D** |
 | 0xE0     | 0x70          | **0x0E** |
-| 0xF0     | 0x78          | **0x0F** |
+| 0xF0     | 0x78          | **DO NOT USE** |
 
 Please do NOT choose `0x08` as the corresponding Salve ID is the default value.
+
+Updating Slave ID to `0xF0` broke my sensors (I broke 3 sensors...). So I highly recommend you not to use the address `0xF0` (data for `0x0F`).
 
 The Slave ID is an I2C address for data writing. See Table.21 List of Slave ID in the [application note](http://www.sharp-world.com/products/device/lineup/data/pdf/datasheet/gp2y0e02_03_appl_e.pdf).
 
