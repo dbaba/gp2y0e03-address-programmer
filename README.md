@@ -108,7 +108,7 @@ And you will see the distance in cm on your terminal console.
 You can see the following output by connecting with a terminal app with baud rate 115200.
 
     ** Welcome to Address Programmer!
-    ** I'll update the GP2Y0E03 I2C address from [0x80](Write) to [0x10](Write)
+    ** I'll update the GP2Y0E03 I2C address from [0x80(7-bit:0x40)](Write) to [0x10(7-bit:0x08)](Write)
     ** You cannot revert the change once the address is updated
     ** Push Button1 to continue!
     +++++++++++++++++++++++++++++++++++
@@ -134,6 +134,9 @@ You can see the following output by connecting with a terminal app with baud rat
 The 'stage 10' functions like `e_fuse_stage10_1_1()` are never tested as I haven't failed to modify addresses yet.
 
 # Revision History
+* 1.2.0
+  - Show 7-bit address as well as 8-bit address
+  - Describe a GP2Y0E03 e-fuse issue which causes a sensor device broken
 * 1.1.0
   - Add a new mode allowing to test if a sensor works properly with the updated address
 * 1.0.0
